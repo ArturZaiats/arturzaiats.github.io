@@ -1,0 +1,126 @@
+@media (min-width: 320px) {
+    .header {
+        flex-direction: column;
+    
+        &__official {
+            padding-top: 25px;
+            font-size: 12px;
+        }
+            span {
+                font-size: 15px;
+            }
+        &__contacts {
+            padding-top: 25px;
+        }
+            &__phone {
+                font-size: 19px;
+            }
+    }
+
+    .promo {
+        padding-bottom: 21px;
+        &__wrapper {
+            margin-top: 40px;
+        }
+
+            &__header {
+                margin: 0 auto;
+                text-align: center;
+                font-size: 16px;
+                line-height: 16px;
+            }
+
+            &__subheader {
+                margin: 0 auto;
+                margin-top: 15px;
+                text-align: center;
+                font-size: 12px;
+                line-height: 12px;
+            }
+
+            &__icons {
+                margin: 0 auto;
+                margin-top: 40px;
+                width: 320px;
+                justify-content: space-around;              
+            }
+
+            &__icon {
+                font-size: 12px;
+            }
+
+            .button_main {
+                margin: 0 auto;
+                margin-top: 40px;
+            }
+
+            &__link {
+                margin: 0 auto;
+                margin-top: 40px;
+            }
+    }
+}
+
+@media (min-width: 375px) {
+    .header {
+        flex-direction: column;
+    
+        &__official {
+            padding-top: 25px;
+            font-size: 18px;
+        }
+            span {
+                font-size: 22px;
+            }
+        &__contacts {
+            padding-top: 25px;
+        }
+            &__phone {
+                font-size: 22px;
+            }
+    }
+
+    .promo {
+        padding-bottom: 21px;
+        &__wrapper {
+            margin-top: 40px;
+        }
+
+            &__header {
+                margin: 0 auto;
+                text-align: center;
+                font-size: 22px;
+                line-height: 22px;
+            }
+
+            &__subheader {
+                margin: 0 auto;
+                margin-top: 15px;
+                text-align: center;
+                font-size: 16px;
+                line-height: 16px;
+            }
+
+            &__icons {
+                margin: 0 auto;
+                margin-top: 40px;
+                width: 375px;
+                justify-content: space-around;              
+            }
+
+            &__icon {
+                font-size: 14px;
+            }
+
+            .button_main {
+                margin: 0 auto;
+                margin-top: 40px;
+            }
+
+            &__link {
+                margin: 0 auto;
+                margin-top: 40px;
+            }
+    }
+}
+
