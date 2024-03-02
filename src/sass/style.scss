@@ -8,6 +8,8 @@
 @import 'blocks/titles';
 @import 'blocks/forms';
 @import 'base/media';
+@import 'blocks/carousel';
+@import 'base/mixins';
 
     
 * {
@@ -15,6 +17,7 @@
 }
 
 .container {
+    position: relative;
     max-width: 950px !important;
     margin: 0 auto !important;
 }
