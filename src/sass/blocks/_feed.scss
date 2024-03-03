@@ -12,12 +12,11 @@
     }
     &__text {
         display: block;
-        width: 680px;
+        width: 670px;
     }
     &__subtitle {
         font-weight: 700;
         font-size: 18px;
-        line-height: 100%;
         color: #0d0d0d;
     }
     &__count {
@@ -28,7 +27,6 @@
     &__descr {
         font-weight: 300;
         font-size: 16px;
-        line-height: 150%;
         color: #0d0d0d;
     }
 }
