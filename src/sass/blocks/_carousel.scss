@@ -4,6 +4,9 @@
         position: relative;
         width: 750px;
         margin: 0 auto;
+        img {
+            width: 100%;
+        }
     }
     .slick-prev, .slick-next {
         position: absolute;
@@ -20,6 +23,14 @@
     .slick-next {
         right: -66px;
         left: auto;
+    }
+    .slick-dots {
+        display: flex;
+        list-style-type: none;
+        .button {
+            width: 40px;
+            height: 40px;
+        }
     }
 
 }
