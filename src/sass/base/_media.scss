@@ -108,6 +108,23 @@
             font-size: 16px;
         }
     }
+    .overlay {
+        .modall {
+            width: 90%;
+            &__close {
+                top: 9px;
+                right: 9px;
+                font-size: 32px;
+            }
+        }
+    }
+    .feed-form {
+        width: 100%;
+    }
+    .button_submit {
+        height: 40px;
+        font-size: 10px;
+    }
 }
 
 @media (max-width: 949px) {
@@ -163,6 +180,15 @@
     .carousel {
         &__inner {
             width: 99%;
+        }
+    }
+    .overlay {
+        .modall {
+            &__close {
+                top: 9px;
+                right: 9px;
+                font-size: 32px;
+            }
         }
     }
 }
