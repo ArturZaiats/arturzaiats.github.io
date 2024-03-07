@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+    // slickSlider
+
     $('.carousel__inner').slick({
         speed: 1200,
         // adaptiveHeight: true,
@@ -14,6 +17,8 @@ $(document).ready(function(){
             }
         ]
       });
+
+    //   animateCatalog+Tabs
 
       $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
         $(this)
@@ -50,6 +55,8 @@ $(document).ready(function(){
         })
     });
 
+    // formValidation
+
     function validateForms(form){
         $(form).validate({
             rules: {
@@ -77,8 +84,32 @@ $(document).ready(function(){
         });
     };
 
+    // phoneMask
+
     validateForms('#consultation-form');
     validateForms('#consultation form');
     validateForms('#order form');
+
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
+
+    // sendingForm
+
+    $('form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
+
+            $('form').trigger('reset');
+        });
+        return false;
+    });
+
+
 });
       
