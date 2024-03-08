@@ -96,6 +96,11 @@ $(document).ready(function(){
 
     $('form').submit(function(e) {
         e.preventDefault();
+
+        if (!$(this).valid()) {
+            return;
+        }
+        
         $.ajax({
             type: "POST",
             url: "mailer/smart.php",
@@ -110,6 +115,20 @@ $(document).ready(function(){
         return false;
     });
 
+    // SMOOTH SCROLL AND PAGEUP
 
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 800) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    $("a[href^=']").clik(function(){
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    });
 });
       
